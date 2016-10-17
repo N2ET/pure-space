@@ -11,6 +11,10 @@ add_action('after_setup_theme', 'gnpl_setup');
 
 function gnpl_setup() {
 
+    add_theme_support( 'post-formats', array(
+        'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
+    ) );
+
 }
 
 function gnpl_scripts() {
