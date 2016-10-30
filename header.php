@@ -15,6 +15,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<title><?php bloginfo( 'name' ); ?></title>
 	<?php wp_head(); ?>
 </head>
 
@@ -22,7 +23,7 @@
 <div id="page">
 
 	<div class="site-about">
-		<a class="site-name" href="<?php echo site_url(); ?>">N2ET</a>
+		<a class="site-name" href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a>
 	</div>
 
 	<div id="content" class="site-content">
