@@ -25,6 +25,18 @@ body {
     color: #666;
 }
 
+.header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #444;
+}
+
 a {
     color: #444;
     text-decoration: none;
@@ -173,8 +185,13 @@ a:hover {
     border-bottom-color: #333;
 }
 
-.post .post-nav a + a {
+.post .post-nav a[rel="next"] {
     float: right;
+}
+
+.post img:not(.fixed) {
+    max-width: 100%;
+    height: auto;
 }
 
 
