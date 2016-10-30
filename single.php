@@ -11,13 +11,5 @@ get_header();
 		?>
 	</div>
 
-
-	<nav class="post-nav">
-		<?php
-		previous_post_link('%link', 'Older');
-		next_post_link('%link', 'Newer');
-		?>
-	</nav>
-
 <?php
 get_footer();

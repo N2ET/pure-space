@@ -20,4 +20,10 @@
 
 <body <?php body_class(); ?>>
 <div id="page">
+
+	<div class="site-about">
+		<a class="site-name" href="<?php echo site_url(); ?>">N2ET</a>
+	</div>
+
 	<div id="content" class="site-content">
+

@@ -13,4 +13,11 @@
 		<?php the_content(); ?>
 	</div>
 
+	<nav class="post-nav">
+		<?php
+		previous_post_link('%link', '< OLDER');
+		next_post_link('%link', 'NEWER >');
+		?>
+	</nav>
+
 </article>
