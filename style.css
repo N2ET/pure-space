@@ -1,0 +1,266 @@
+/*
+Theme Name: pure-space
+Theme URI: http://wordpress.org/themes/gnpl
+Author: the gnpl
+Author URI: http://wordpress.org/
+Description: minimal theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: minimal
+Text Domain: gnpl
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #666;
+}
+
+.header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #444;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #f33;
+}
+
+/*** common ***/
+#page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px;
+    letter-spacing: 1px;
+}
+
+.post-list {
+    margin: 50px 0;
+}
+
+/*** site-about ***/
+.site-about {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.site-about .site-name {
+    font-size: 15px;
+}
+
+.site-about .site-name:hover {
+    color: #444;
+}
+
+/*** home ***/
+.home #page {
+    max-width: 600px;
+}
+
+.home .post-list {
+
+}
+
+.home .post-list > article {
+    font-size: 20px;
+    padding: 30px 0 30px 84px;
+    border-bottom: solid 1px #e6e6e6;
+}
+
+.home .post-list > article time {
+    font-size: 14px;
+    vertical-align: top;
+    line-height: 22px;
+    margin-left: -84px;
+    
+    float: left;
+}
+
+/*** single page ***/
+.single-post .post-container {
+    margin: 50px 0;
+}
+
+.single-post .post-header time {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.post {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #e6e6e6;
+    line-height: 1.8em;
+}
+
+.post h1 {
+    font-size: 32px;
+    margin: 0 0 45px;
+    letter-spacing: 1px;
+}
+.post h2 {
+    font-size: 24px;
+    margin: 60px 0 30px;
+    position: relative;
+}
+.post h2:before {
+    content: '';
+    border-left: 5px solid #f66;
+    position: absolute;
+    left: -15px;
+    height: 75%;
+    top: 12%;
+}
+.post h3 {
+    margin: 30px 0 15px;
+}
+
+.post .post-content p,
+.post .post-content ul,
+.post .post-content ol {
+    margin: 1em 0 1.5em;
+}
+
+.post .post-content strong {
+    font-weight: 600;
+    color: #444;
+}
+.post .post-content ol {
+    padding-left: 1.6em;
+}
+.post .post-content ul {
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.post .post-content ul li,
+.post .post-content ol li {
+    position: relative;
+}
+
+.post .post-content ul li:before {
+    position: absolute;
+    font-weight: 600;
+    content: " · ";
+    margin: 0;
+    left: -14px;
+}
+
+.post a {
+    color: #f33;
+}
+
+.post a:hover {
+    border-bottom: solid 2px #f33;
+}
+
+.post .post-nav a {
+    color: #999;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.post .post-nav a:hover {
+    color: #333;
+    border-bottom-color: #333;
+}
+
+.post .post-nav a[rel="next"] {
+    float: right;
+}
+
+.post img:not(.fixed) {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 420px) {
+
+    .site-about {
+        margin: 40px 0 10px 0;
+    }
+
+    /*** home ***/
+    .home .post-list {
+        margin-top: 32px;
+    }
+
+    .home .post-list > article {
+        padding: 18px 0 20px 0;
+    }
+
+    .home .post-list > article time {
+        display: block;
+        width: 100%;
+        font-size: 11px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .home .post-list > article a {
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    /*** single post ***/
+    .single-post .post-container {
+        margin-top: 32px;
+    }
+
+    .single-post .post-header time {
+        margin-bottom: 20px;
+    }
+
+    .post h1 {
+        font-size: 24px;
+        margin: 0 0 30px;
+    }
+
+    .post h2 {
+        font-size: 20px;
+        margin: 30px 0 15px;
+    }
+
+    .post h3 {
+        font-size: 16px;
+        line-height: 1.3em;
+    }
+
+    .post .date {
+        font-size: 12px;
+        margin: 0 0 20px;
+    }
+    .post .post-content {
+        font-size: 15px;
+    }
+    .post .post-content pre {
+        font-size: 12px;
+    }
+    .post .post-content blockquote p {
+        font-size: 16px;
+    }
+}
+
+
